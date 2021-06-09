@@ -36,7 +36,7 @@ const setStorage = (e) => {
 
   
 return (
-  <>
+  <><div className='SignUp'>
   <div className='FormUp'>
   <Form onChange = {onChangeHandler}>
     <div>
@@ -66,7 +66,8 @@ return (
 
   <div> <Link to='/SignIn'><a>You have a registered account?</a></Link></div>
 
-  {state.password !== state.repeatPassword ? <div>{error}</div> : null}
+  {state.password !== state.repeatPassword ? <div className='error'>{error}</div> : null}
+  </div>
   </>
   ) 
 }

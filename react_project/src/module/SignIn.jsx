@@ -32,7 +32,7 @@ const getStorage = (e) => {
   return (
   <div className='FormIn'>
     <Form onChange={ onChangeHandlerIn }>
-<div>
+  <div>
   <Input 
   name='name' 
   value={stateIn.name} 
@@ -40,16 +40,16 @@ const getStorage = (e) => {
   type='text'>
   </Input>
   </div>
-<div>
-<Input 
-name='password' 
-value={stateIn.password} 
-placeholder='password' 
-type='password'>
+  <div>
+  <Input 
+  name='password' 
+  value={stateIn.password} 
+  placeholder='password' 
+  type='password'>
   </Input>
   </div>
-    <Link to='/'><Button  onClick = { getStorage }text = 'Log In'></Button></Link>
-    </Form>
+  <Link to='FilmsMain'><Button  onClick = { getStorage }text = 'Log In'></Button></Link>
+ </Form>
   </div>
   )
 }
